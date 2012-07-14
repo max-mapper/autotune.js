@@ -5889,6 +5889,7 @@ function _runAutotalent($Instance, $SampleCount) {
       var $incdec_ptr959=(($918+4)|0);
       $pfOutput=$incdec_ptr959;
       HEAPF32[(($918)>>2)]=$add958;
+      console.log($pfOutput, HEAPF32[(($918)>>2)])
       __label__ = 175; break;
     case 175: 
       var $919=$lSampleIndex;
