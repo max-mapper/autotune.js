@@ -1,0 +1,7 @@
+{
+  "name": "autotune",
+  "version": "0.0.1",
+  "dependencies": {
+    "bindings": "1.0.0"
+  }
+}
