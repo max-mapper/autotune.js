@@ -1,20 +1,21 @@
-var FORM_CORR=0
-var SCALE_ROTATE=0
-var LFO_QUANT=0
-var CONCERT_A=440.0
-var FIXED_PITCH=2.0
-var FIXED_PULL=0.1
-var CORR_STR=4.0
-var CORR_SMOOTH=0.0
-var PITCH_SHIFT=1.0
-var LFO_DEPTH=0.1
-var LFO_RATE=1.0
-var LFO_SHAPE=0.0
-var LFO_SYMM=0.0
-var FORM_WARP=0.0
-var MIX=1.0
-var KEY="c"
+// i8,i16,i32,i64,float,double
 
+var FORM_CORR=allocate([0], 'i32', ALLOC_STATIC)
+var SCALE_ROTATE=allocate([0], 'i32', ALLOC_STATIC)
+var LFO_QUANT=allocate([0], 'i32', ALLOC_STATIC)
+var CONCERT_A=allocate([440.0], 'float', ALLOC_STATIC)
+var FIXED_PITCH=allocate([2.0], 'float', ALLOC_STATIC)
+var FIXED_PULL=allocate([0.1], 'float', ALLOC_STATIC)
+var CORR_STR=allocate([4.0], 'float', ALLOC_STATIC)
+var CORR_SMOOTH=allocate([0.0], 'float', ALLOC_STATIC)
+var PITCH_SHIFT=allocate([1.0], 'float', ALLOC_STATIC)
+var LFO_DEPTH=allocate([0.1], 'float', ALLOC_STATIC)
+var LFO_RATE=allocate([1.0], 'float', ALLOC_STATIC)
+var LFO_SHAPE=allocate([0.0], 'float', ALLOC_STATIC)
+var LFO_SYMM=allocate([0.0], 'float', ALLOC_STATIC)
+var FORM_WARP=allocate([0.0], 'float', ALLOC_STATIC)
+var MIX=allocate([1.0], 'float', ALLOC_STATIC)
+var KEY=allocate(["a".charCodeAt(0)], 'i8', ALLOC_STATIC)
 
 function parseWav(wav) {
   function readInt(i, bytes) {
